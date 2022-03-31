@@ -1,9 +1,14 @@
 from typing import List
-from torch.utils.data import Dataset, DataLoader
-from transformers import BertTokenizerFast as BertTokenizer, BertModel, AdamW, get_linear_schedule_with_warmup
+
 import pandas as pd
-import torch 
 import pytorch_lightning as pl
+import torch
+from torch.utils.data import DataLoader, Dataset
+from transformers import AdamW, BertModel
+from transformers import BertTokenizerFast as BertTokenizer
+from transformers import get_linear_schedule_with_warmup
+
+
 
 class BiomimicryDataset(Dataset):
 
