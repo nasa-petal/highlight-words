@@ -31,8 +31,8 @@ from sklearn.pipeline import make_pipeline
 from lime.lime_text import LimeTextExplainer
 
 #read the data
-df_train=pd.read_csv("/Users/dolungwe/nlp-getting-started/train.csv")
-df_test=pd.read_csv("/Users/dolungwe/nlp-getting-started/test.csv")
+df_train=pd.read_csv(r"C:\Users\dcolu\OneDrive\Documents\nlp-getting-started/train.csv")
+df_test=pd.read_csv(r"C:\Users\dcolu\OneDrive\Documents\nlp-getting-started/test.csv")
 
 #print(df_train)
 
