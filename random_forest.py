@@ -19,6 +19,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, f1_score, accuracy_score, confusion_matrix, roc_curve, auc
 
+
 #bag of words
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
@@ -31,8 +32,8 @@ from sklearn.pipeline import make_pipeline
 from lime.lime_text import LimeTextExplainer
 
 #read the data
-df_train=pd.read_csv("/Users/dolungwe/nlp-getting-started/train.csv")
-df_test=pd.read_csv("/Users/dolungwe/nlp-getting-started/test.csv")
+df_train=pd.read_csv(r"C:\Users\dcolu\OneDrive\Documents\nlp-getting-started/train.csv")
+df_test=pd.read_csv(r"C:\Users\dcolu\OneDrive\Documents\nlp-getting-started/test.csv")
 
 #print(df_train)
 
@@ -133,3 +134,5 @@ print('True class: %s' % class_names.get(list(y_val)[idx]))
 #print("1 = disaster class, 0 = non-disaster class")
 # show the explainability results with highlighted text
 #LIME_exp.show_in_notebook(text=True)
+
+  # merge (the default strategy)
